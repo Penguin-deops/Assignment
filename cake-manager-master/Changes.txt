@@ -1,0 +1,20 @@
+Author: Vipin Singh
+Log of Changes
+==============
+1. Fix the package name and move to the correct package/folder.
+2. To fix the Root Access(/) error, added <jsp:forward page="/cakes"></jsp:forward> in Index.jsp to forward to servlet '/cakes'.
+3. In web.xml added servlet name, class and mapping.
+4. CakeManagerException custom class was created, which extends the unchecked RuntimeException.
+5. display.jsp was added to show the human presentation of the list of cakes while adding a new Cake.    
+6. Refactored CakeServlet, added methods to avoid duplicated statements!.  
+7. HibernateUtil, added a close method for session closing.
+9. CakeEntity, was refactored to refelect CakeEntity properties.
+    
+Future enhancement
+==============   
+1. Regex based validation for input text.
+2. exception handling, comments and logging
+3. Utility class to group common functions.
+4. Caching of DB connectivity to avoid DB connection.
+5. Considering multi-threading operations
+6. Test plan for corner cases and different browser support.
